@@ -4,10 +4,13 @@ project about cake's store by task studi independen in eduwork
 ## **Progress**
 - [x] Database 
 
-  ![ERD Cakes Store](https://media.discordapp.net/attachments/894919708938223657/1110215324336410624/IMG-20230522-WA0036.jpg)
-- [ ] Templating layout
-- [ ] Frontend pages
+  ![ERD Cakes Store](https://media.discordapp.net/attachments/894919708938223657/1110693883614068817/ERD-CakesFact.jpg)
+- [x] Templating layout
+- [x] Frontend landing pages
+- [x] Frontend admin pages
 - [ ] Login
 - [ ] CRUD
 
-#### *Templating design by [HTML Codex](https://htmlcodex.com)*
+#### *Templating design landing page by [HTML Codex](https://htmlcodex.com)*
+#### *Distributed By [ThemeWagon](https://themewagon.com)*
+#### *Templating design admin page by [AdminKit](adminkit.io)*
