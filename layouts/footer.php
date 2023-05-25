@@ -1,6 +1,6 @@
         <div class="container-fluid bg-img text-secondary" style="margin-top: 90px">
             <div class="container">
-                <div class="row gx-5">
+                <div class="row gx-4">
                     <div class="col-lg-4 col-md-6 mb-lg-n5">
                         <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary border-inner p-4">
                             <a href="index.php" class="navbar-brand">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-secondary py-4" style="background: #111111;">
+        <div class="container-fluid text-secondary py-5" style="background: #111111;">
             <div class="container text-center">
                 <p class="mb-0">&copy; <a class="text-white border-bottom" href="https://github.com/nuurfatimah13">Cakes Fact ~ Imah</a>. All Rights Reserved. 
                 
