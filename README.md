@@ -8,8 +8,8 @@ project about cake's store by task studi independen in eduwork
 - [x] Templating layout
 - [x] Frontend landing pages
 - [x] Frontend admin pages
-- [ ] Login
-- [ ] CRUD
+- [x] Login
+- [x] CRUD
 
 #### *Templating design landing page by [HTML Codex](https://htmlcodex.com)*
 #### *Distributed By [ThemeWagon](https://themewagon.com)*

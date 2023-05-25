@@ -9,19 +9,14 @@
                     <i class="align-middle" data-feather="settings"></i>
                 </a>
                 <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                    <img src="../../assets/img/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Fatih" /> 
+                    <img src="../../../assets/img/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Fatih" /> 
                     <span class="text-dark">Fatih</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="#">
-                        <form action="../../controllers/logout2.php" method="post">
-                            <input type="hidden" name="logout" value="1">
-                            <button class="btn btn-primary" type="submit">
-                                <i class="align-middle" data-feather="log-out">
-                                </i>
-                                Log out
-                            </button>
-                        </form>
+                    <a class="dropdown-item" href="../../../index.php">
+                        <i class="align-middle" data-feather="log-out">
+                        </i>
+                        Log out
                     </a>
                 </div>
             </li>

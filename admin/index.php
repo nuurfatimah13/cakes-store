@@ -34,17 +34,17 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./chef.php">
+                            <a class="sidebar-link" href="master-data/chef.php">
                                 <i class="align-middle" data-feather="users"></i> <span class="align-middle">Chef</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./categories.php">
+                            <a class="sidebar-link" href="master-data/categories.php">
                                 <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Categories</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./product.php">
+                            <a class="sidebar-link" href="master-data/product.php">
                                 <i class="align-middle" data-feather="menu"></i> <span class="align-middle">Products</span>
                             </a>
                         </li>
@@ -54,7 +54,36 @@
             
             <div class="main">
                 <!-- Navbar Start -->
-                <?php include_once ("layouts/navbar.php"); ?>
+                <nav class="navbar navbar-expand navbar-light navbar-bg">
+                    <a class="sidebar-toggle js-sidebar-toggle ms-4">
+                        <i class="hamburger align-self-center"></i>
+                    </a>
+                    <div class="navbar-collapse collapse">
+                        <ul class="navbar-nav navbar-align">
+                            <li class="nav-item dropdown">
+                                <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                                    <i class="align-middle" data-feather="settings"></i>
+                                </a>
+                                <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                                    <img src="../assets/img/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Fatih" /> 
+                                    <span class="text-dark">Fatih</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="#">
+                                        <form action="../controllers/logout.php" method="post">
+                                            <input type="hidden" name="logout" value="1">
+                                            <button class="btn btn-primary" type="submit">
+                                                <i class="align-middle" data-feather="log-out">
+                                                </i>
+                                                Log out
+                                            </button>
+                                        </form>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
                 <!-- Navbar End -->
 
                 <main class="content">
@@ -64,25 +93,28 @@
                             <div class="col-xl-12 col-xxl-12 d-flex">
                                 <div class="w-100">
                                     <div class="row">
+                                        <?php 
+                                            include "../connection/db.php";
+                                            $data_chef = mysqli_query($conn,"SELECT * FROM chef");
+                                            $chefs = mysqli_num_rows($data_chef);
+                                            
+                                            $data_product = mysqli_query($conn,"SELECT * FROM product");
+                                            $products = mysqli_num_rows($data_product);
+                                        ?>
                                         <div class="col-sm-6">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <div class="col mt-0">
-                                                            <h5 class="card-title">Chefs</h5>
+                                                            <h3 class="card-title">Chefs</h3>
                                                         </div>
-
                                                         <div class="col-auto">
                                                             <div class="stat text-primary">
                                                                 <i class="align-middle" data-feather="users"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h1 class="mt-1 mb-3">2.382</h1>
-                                                    <div class="mb-0">
-                                                        <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
-                                                        <span class="text-muted">Since last week</span>
-                                                    </div>
+                                                    <h1 class="text-center mt-1 mb-3"><?= $chefs ?></h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,20 +123,15 @@
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <div class="col mt-0">
-                                                            <h5 class="card-title">Products</h5>
+                                                            <h3 class="card-title">Products</h3>
                                                         </div>
-
                                                         <div class="col-auto">
                                                             <div class="stat text-primary">
                                                                 <i class="align-middle" data-feather="menu"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h1 class="mt-1 mb-3">14.212</h1>
-                                                    <div class="mb-0">
-                                                        <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
-                                                        <span class="text-muted">Since last week</span>
-                                                    </div>
+                                                    <h1 class="text-center mt-1 mb-3"><?= $products ?></h1>
                                                 </div>
                                             </div>
                                         </div>
