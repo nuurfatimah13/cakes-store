@@ -65,7 +65,7 @@
                                                         id="validationCustomUsername" 
                                                         aria-describedby="inputGroupPrepend" required>
                                                     <div class="invalid-feedback">
-                                                        Email tidak boleh kosong.
+                                                        Username tidak boleh kosong.
                                                     </div>
                                                 </div>
                                             </div>
