@@ -69,6 +69,39 @@
                     <div class="container-fluid p-0">
                         <h1 class="h3 mb-3">Dashboard / <strong>Categories</strong></h1>
                         <div class="col-sm-12">
+                            <?php 
+                                // MESSAGE
+                                if (isset($_GET['success'])){
+                                    if ($_GET['success']=='create'){
+                                        ?>
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong><i class="icon fa fa-check"></i>Data added successfully!</strong>
+                                            <button type="button" class="btn-close" 
+                                                data-bs-dismiss="alert" aria-label="Close">
+                                            </button>
+                                        </div>			
+                                        <?php
+                                    } elseif($_GET['success']=="update"){
+                                        ?>
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong><i class="icon fa fa-check"></i>Data updated successfully!</strong>
+                                            <button type="button" class="btn-close" 
+                                                data-bs-dismiss="alert" aria-label="Close">
+                                            </button>
+                                        </div>							
+                                        <?php
+                                    } elseif($_GET['success']=="delete"){
+                                        ?>
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong><i class="icon fa fa-check"></i>Data deleted successfully!</strong>
+                                            <button type="button" class="btn-close" 
+                                                data-bs-dismiss="alert" aria-label="Close">
+                                            </button>
+                                        </div>							
+                                        <?php
+                                    }
+                                }
+                            ?>
                             <div class="card">
                                 <div class="card-body">
                                     <?php

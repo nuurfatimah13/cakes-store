@@ -27,6 +27,9 @@
 
         <!-- Template Stylesheet -->
         <link href="assets/plugin/CakeZone/css/style.css" rel="stylesheet">
+
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="assets/css/mystyles.css">
     </head>
     <body>
 
@@ -38,7 +41,7 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
             <a href="index.php" class="navbar-brand d-block d-lg-none">
                 <h1 class="m-0 text-uppercase text-white">
-                    <i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>
+                <img src="assets/img/kue.png" alt="logo" class="fs-1 me-3" width="12%">
                     Cakes Fact
                 </h1>
             </a>
@@ -47,12 +50,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-lg-auto py-0">
-
                     <a href="index.php" class="nav-item nav-link active">Home</a>
                     <a href="about.php" class="nav-item nav-link">About Us</a>
                     <a href="menu.php" class="nav-item nav-link">Menu & Pricing</a>
                     <a href="team.php" class="nav-item nav-link">Master Chefs</a>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
+                    <a href="login.php" class="nav-item nav-link" id="my-content">Login</a>
                 </div>
             </div>
         </nav>

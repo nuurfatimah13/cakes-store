@@ -23,7 +23,7 @@
             move_uploaded_file($_FILES['image']['tmp_name'], '../../assets/img/uploads/'.$rand.'_'.$filename);
             mysqli_query($conn, "INSERT INTO product (chef_id, categories_id, name, size, description, price, image) 
                                     VALUES ('$chef', '$category', '$name', '$size', '$description', '$price', '$image')");
-            header("Location:../../admin/master-data/product.php");
+            header("Location:../../admin/master-data/product.php?success=create");
         }else{
             header("Location:../../admin/master-data/product.php?alert=gagal_ukuran");
         }

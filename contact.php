@@ -27,6 +27,9 @@
 
         <!-- Template Stylesheet -->
         <link href="assets/plugin/CakeZone/css/style.css" rel="stylesheet">
+
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="assets/css/mystyles.css">
     </head>
     <body>
 
@@ -47,12 +50,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-lg-auto py-0">
-
                     <a href="index.php" class="nav-item nav-link">Home</a>
                     <a href="about.php" class="nav-item nav-link">About Us</a>
                     <a href="menu.php" class="nav-item nav-link">Menu & Pricing</a>
                     <a href="team.php" class="nav-item nav-link">Master Chefs</a>
                     <a href="contact.php" class="nav-item nav-link active">Contact Us</a>
+                    <a href="login.php" class="nav-item nav-link" id="my-content">Login</a>
                 </div>
             </div>
         </nav>

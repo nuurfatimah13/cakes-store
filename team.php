@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Home | Cakes Fact</title>
+        <title>Master Chefs | Cakes Fact</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free HTML Templates" name="keywords">
         <meta content="Free HTML Templates" name="description">
@@ -27,6 +27,9 @@
 
         <!-- Template Stylesheet -->
         <link href="assets/plugin/CakeZone/css/style.css" rel="stylesheet">
+
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="assets/css/mystyles.css">
     </head>
     <body>
 
@@ -53,6 +56,7 @@
                     <a href="menu.php" class="nav-item nav-link">Menu & Pricing</a>
                     <a href="team.php" class="nav-item nav-link active">Master Chefs</a>
                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
+                    <a href="login.php" class="nav-item nav-link" id="my-content">Login</a>
                 </div>
             </div>
         </nav>

@@ -22,6 +22,6 @@
     
     // (C) REDIRECT TO HOME PAGE IF SIGNED IN - SET YOUR OWN !
     if (isset($_SESSION["user"])) {
-        header("Location: admin/index.php");
+        header("Location: admin/index.php?success");
         exit();
     }

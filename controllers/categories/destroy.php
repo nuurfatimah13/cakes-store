@@ -6,4 +6,4 @@
 
     $result = mysqli_query($conn, "DELETE FROM categories WHERE id = '$id';");
 
-    header("Location:../../admin/master-data/categories.php");
+    header("Location:../../admin/master-data/categories.php?success=delete");

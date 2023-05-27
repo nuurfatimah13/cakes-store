@@ -22,7 +22,7 @@
             move_uploaded_file($_FILES['image']['tmp_name'], '../../assets/img/uploads/'.$rand.'_'.$filename);
             mysqli_query($conn, "INSERT INTO chef (name, divisi, telp, email, address, image) VALUES 
                 ('$name', '$divisi', '$telp', '$email', '$address', '$image')");
-            header("Location:../../admin/master-data/chef.php");
+            header("Location:../../admin/master-data/chef.php?success=create");
         }else{
             header("Location:../../admin/master-data/chef.php?alert=gagal_ukuran");
         }

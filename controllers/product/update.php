@@ -28,7 +28,7 @@
                 mysqli_query($conn, "UPDATE product SET chef_id = '$chef', categories_id = '$category', name = '$name', 
                     size = '$size', description = '$description', price = '$price', image = '$image'  
                     WHERE id = '$id';");
-                header("Location:../../admin/master-data/product.php");
+                header("Location:../../admin/master-data/product.php?success=update");
             } else {
                 header("Location:../../admin/master-data/product.php?alert=gagal_ukuran");
             }

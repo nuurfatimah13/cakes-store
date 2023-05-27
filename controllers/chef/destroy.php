@@ -11,4 +11,4 @@
 
     $result = mysqli_query($conn, "DELETE FROM chef WHERE id = '$id';");
 
-    header("Location:../../admin/master-data/chef.php");
+    header("Location:../../admin/master-data/chef.php?success=delete");

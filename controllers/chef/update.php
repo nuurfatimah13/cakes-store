@@ -27,7 +27,7 @@
                 mysqli_query($conn, "UPDATE chef SET name = '$name', divisi = '$divisi', telp = '$telp', email = '$email', 
                     address = '$address', image = '$image'  
                     WHERE id = '$id';");
-                header("Location:../../admin/master-data/chef.php");
+                header("Location:../../admin/master-data/chef.php?success=update");
             } else {
                 header("Location:../../admin/master-data/chef.php?alert=gagal_ukuran");
             }

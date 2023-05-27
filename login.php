@@ -44,10 +44,10 @@
                                             // (A) LOGIN CHECKS
                                             include "controllers/login.php";
                                             
-                                            // (B) LOGIN PAGE HTML
+                                            // (B) LOGIN PAGE
                                             if (isset($failed)) { 
                                         ?>
-                                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                                 <strong>Invalid username or password.</strong>
                                                 <button type="button" class="btn-close" 
                                                     data-bs-dismiss="alert" aria-label="Close">

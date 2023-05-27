@@ -88,6 +88,19 @@
 
                 <main class="content">
                     <div class="container-fluid p-0">
+                        <?php
+                            // (A) MESSAGE LOGIN 
+                            if (isset($_GET['success'])) { 
+                        ?>
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>You have successfully logged in!</strong>
+                                <button type="button" class="btn-close" 
+                                    data-bs-dismiss="alert" aria-label="Close">
+                                </button>
+                            </div>
+                        <?php 
+                            } 
+                        ?>
                         <h1 class="h3 mb-3"><strong>Dashboard</strong></h1>
                         <div class="row">
                             <div class="col-xl-12 col-xxl-12 d-flex">

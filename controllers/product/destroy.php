@@ -11,4 +11,4 @@
 
     $result = mysqli_query($conn, "DELETE FROM product WHERE id = '$id';");
 
-    header("Location:../../admin/master-data/product.php");
+    header("Location:../../admin/master-data/product.php?success=delete");
