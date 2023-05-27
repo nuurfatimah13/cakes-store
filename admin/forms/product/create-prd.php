@@ -16,7 +16,7 @@
 
         <title>Administrator | Cakes Fact</title>
 
-        <link href="../assets/plugin/AdminKit/css/app.css" rel="stylesheet">
+        <link href="../../../assets/plugin/AdminKit/css/app.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
         <script type="text/javascript" src="../../../assets/js/jquery-3.5.1.js"></script>
         <script type="text/javascript" src="../../../assets/js/jquery.dataTables.min.js"></script>
