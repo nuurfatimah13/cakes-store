@@ -67,7 +67,7 @@
 
                 <main class="content">
                     <div class="container-fluid p-0">
-                        <h1 class="h3 mb-3">Dashboard / <strong>Chef</strong></h1>
+                        <h1 class="h3 mb-3">Dashboard / <strong>Products</strong></h1>
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-body">
